@@ -15,6 +15,20 @@
     <description>sky-cloud-dao</description>
 
     <dependencies>
+        <!-- 模块内部依赖 start -->
+        <dependency>
+            <groupId>com.zero</groupId>
+            <artifactId>sky-cloud-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zero</groupId>
+            <artifactId>sky-cloud-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zero</groupId>
+            <artifactId>sky-cloud-repository</artifactId>
+        </dependency>
+        <!-- 模块内部依赖 end -->
     </dependencies>
 
 </project>

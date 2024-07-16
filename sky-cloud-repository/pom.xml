@@ -15,6 +15,12 @@
     <description>sky-cloud-repository</description>
 
     <dependencies>
+        <!-- 模块内部依赖 start -->
+        <dependency>
+            <groupId>com.zero</groupId>
+            <artifactId>sky-cloud-domain</artifactId>
+        </dependency>
+        <!-- 模块内部依赖 end -->
     </dependencies>
 
 </project>

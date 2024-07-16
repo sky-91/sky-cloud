@@ -54,6 +54,48 @@
     </dependencies>
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>com.zero</groupId>
+                <artifactId>sky-cloud-boot</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zero</groupId>
+                <artifactId>sky-cloud-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zero</groupId>
+                <artifactId>sky-cloud-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zero</groupId>
+                <artifactId>sky-cloud-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zero</groupId>
+                <artifactId>sky-cloud-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zero</groupId>
+                <artifactId>sky-cloud-dao</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zero</groupId>
+                <artifactId>sky-cloud-repository</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zero</groupId>
+                <artifactId>sky-cloud-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>

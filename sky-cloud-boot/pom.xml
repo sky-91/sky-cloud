@@ -29,6 +29,14 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- 模块内部依赖 start -->
+        <dependency>
+            <groupId>com.zero</groupId>
+            <artifactId>sky-cloud-web</artifactId>
+        </dependency>
+        <!-- 模块内部依赖 end -->
+
     </dependencies>
 
     <build>

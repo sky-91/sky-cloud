@@ -15,6 +15,16 @@
     <description>sky-cloud-service</description>
 
     <dependencies>
+        <!-- 模块内部依赖 start -->
+        <dependency>
+            <groupId>com.zero</groupId>
+            <artifactId>sky-cloud-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zero</groupId>
+            <artifactId>sky-cloud-common</artifactId>
+        </dependency>
+        <!-- 模块内部依赖 end -->
     </dependencies>
 
 </project>
