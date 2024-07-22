@@ -15,6 +15,16 @@
     <description>sky-cloud-domain</description>
 
     <dependencies>
+        <dependency>
+            <groupId>com.zero</groupId>
+            <artifactId>cloud-common-data</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
 </project>

@@ -9,13 +9,17 @@
     <name>sky-cloud</name>
     <description>sky-cloud多模块应用</description>
     <properties>
+        <common-data.version>0.0.1-SNAPSHOT</common-data.version>
         <java.version>1.8</java.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.surefire.version>3.2.5</maven.surefire.version>
         <maven.jar.version>3.3.0</maven.jar.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-boot.version>2.7.6</spring-boot.version>
+        <spring-boot.version>2.7.18</spring-boot.version>
+        <mybatis-starter.version>2.3.2</mybatis-starter.version>
+        <mysql-connector.version>8.3.0</mysql-connector.version>
+        <lombok.version>1.18.34</lombok.version>
     </properties>
 
     <modules>
@@ -29,32 +33,11 @@
         <module>sky-cloud-domain</module>
     </modules>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.6</version>
-        <relativePath/>
-    </parent>
-
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
-
+            <!-- 模块内部依赖 -->
             <dependency>
                 <groupId>com.zero</groupId>
                 <artifactId>sky-cloud-boot</artifactId>
@@ -95,6 +78,14 @@
                 <artifactId>sky-cloud-domain</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <!-- 模块内部依赖 -->
+            <!-- 基础模块依赖 -->
+            <dependency>
+                <groupId>com.zero</groupId>
+                <artifactId>cloud-common-data</artifactId>
+                <version>${common-data.version}</version>
+            </dependency>
+            <!-- 基础模块依赖 -->
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -102,6 +93,23 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>${mysql-connector.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

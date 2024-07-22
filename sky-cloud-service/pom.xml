@@ -24,7 +24,19 @@
             <groupId>com.zero</groupId>
             <artifactId>sky-cloud-common</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.zero</groupId>
+            <artifactId>sky-cloud-dao</artifactId>
+        </dependency>
         <!-- 模块内部依赖 end -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

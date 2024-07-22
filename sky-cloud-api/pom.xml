@@ -21,6 +21,12 @@
             <artifactId>sky-cloud-domain</artifactId>
         </dependency>
         <!-- 模块内部依赖 end -->
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
 </project>

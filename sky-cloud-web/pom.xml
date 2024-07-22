@@ -21,6 +21,16 @@
             <artifactId>sky-cloud-service</artifactId>
         </dependency>
         <!-- 模块内部依赖 end -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
 </project>
